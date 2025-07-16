@@ -8,7 +8,7 @@ enum RadioMessage {
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 0) {
         robobit.RBBias(RBRobotDirection.Left, 5)
-        robobit.go(RBDirection.Forward, 90)
+        robobit.go(RBDirection.Forward, 85)
     }
     if (receivedNumber == 1) {
         robobit.rotatems(RBRobotDirection.Left, 80, 100)
