@@ -26,21 +26,19 @@ radio.onReceivedNumber(function (receivedNumber) {
 input.onButtonPressed(Button.A, function () {
     freqBand += -1
     if (freqBand <= 0) {
-        freqBand = 15
+        freqBand = 20
     }
     radio.setFrequencyBand(freqBand)
     basic.showNumber(freqBand)
-    basic.pause(500)
     basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     freqBand += 1
-    if (freqBand >= 15) {
+    if (freqBand >= 20) {
         freqBand = 1
     }
     radio.setFrequencyBand(freqBand)
     basic.showNumber(freqBand)
-    basic.pause(500)
     basic.clearScreen()
 })
 let freqBand = 0
