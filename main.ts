@@ -8,13 +8,13 @@ enum RadioMessage {
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 0) {
         robobit.RBBias(RBRobotDirection.Left, 5)
-        robobit.go(RBDirection.Forward, 75)
+        robobit.go(RBDirection.Forward, 90)
     }
     if (receivedNumber == 1) {
-        robobit.rotatems(RBRobotDirection.Left, 75, 60)
+        robobit.rotatems(RBRobotDirection.Left, 80, 100)
     }
     if (receivedNumber == 2) {
-        robobit.rotatems(RBRobotDirection.Right, 75, 60)
+        robobit.rotatems(RBRobotDirection.Right, 80, 100)
     }
     if (receivedNumber == 3) {
     	
